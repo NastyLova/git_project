@@ -9,7 +9,7 @@ BEGIN
   WHILE @@FETCH_STATUS = 0 
    BEGIN
 		SET @Photo_client  = CAST(@Client_id as nvarchar(10)) + '.png'
-		exec [AKSFINANCE.AIS].dbo.ArchiCredit_PhotoExport @Client_id, 'E:\PHOTO', @Photo_client
+		exec [DATABASE].dbo.TABLE2 @Client_id, 'E:\PHOTO', @Photo_client
     FETCH NEXT FROM Cur INTO @Client_id
    END
 END
