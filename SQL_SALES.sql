@@ -1,5 +1,5 @@
 USE [msdb]
-GO --βοεπεδ
+GO
 EXEC msdb.dbo.sp_update_job @job_id=N'2bc5e5b0-2bf7-4a1d-a826-755a2d', 
 		@notify_level_email=2, 
 		@notify_level_page=2
@@ -45,7 +45,7 @@ IF EXISTS (SELECT * FROM TABLE2 WHERE COLUMN3 = 1 AND (ID = @ReleasePlaceFrom OR
      DATETIME2 = dbo.datestrtodate('now'),       
      DATETIME3 = dbo.datestrtodate('now'),     
      COLUMN1 = IsNull(@MaxInt, 0) + 1,     
-	 COLUMN13 = '’εκρς' + CONVERT(VARCHAR(10),GETDATE(),104) + ' ' + COLUMN13   
+	 COLUMN13 = 'ΠΆΠ•ΠΠ΅ΠΆ' + CONVERT(VARCHAR(10),GETDATE(),104) + ' ' + COLUMN13   
     WHERE ID = @OrderID              
     FETCH NEXT FROM Cur INTO @OrderID  
    END 
