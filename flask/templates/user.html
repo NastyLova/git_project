@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+<title>{{ 'MySite: '+user.login}}</title>
+{% endblock %}
+
+{% block content %}
+	<h3>Привет, {{ user['login'] }}</h3>
+	<p>Твои ФИО: {{ user['surname'] + ' ' + user['user_name'] + ' ' + user['lastname']}}</p>
+	<p>Твой возраст: {{ user['age'] }}</p>
+		{% if user['sex'] == '1' %}
+			<p>Твой пол: Мужской</p>
+		{% else %}
+			<p>Твой пол: Женский</p>
+		{% endif %}
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Mysite: new user</title>
+{% endblock %}
+
+{% block content %}
+<div>
+	<h4>Анкета создания пользователя</h4>
+</div>
+<div>
+	<form name="test" method="post" action="/user">
+		<div>Ваша фамилия <input name="surname" type="text" size="40" placeholder="Введите фамилию"></div><br>
+		<div>Ваше имя <input name="user_name" type="text" size="40" placeholder="Введите имя"></div><br>
+		<div>Ваше отчество <input name="lastname" type="text" size="40" placeholder="Введите отчество"></div><br>
+		<div>Ваш возраст <input name="age" type="number" size="40" placeholder="Введите возраст"></div><br>
+		<div>Ваш логин <input name="login" type="text" size="40" placeholder="Введите логин"></div><br>
+		<div>
+			Ваш пол
+			<select name="sex">
+				<option value="1">Мужской</option>
+				<option value="2">Женский</option>
+			</select><br>
+		</div>
+		<input type="submit" value="Отправить">
+	</form>
+</div>
+{% endblock %}

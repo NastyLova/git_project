@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<h1>Hello World!</h1>
+    <h2>Ololo!</h2>
+    <br>	
+	{% for page_num,url in  pages: %}
+    <a href = '{{url}}'>Перейти на страницу {{page_num+1}}</a>
+	<br>
+	{% endfor %}
+{% endblock %}

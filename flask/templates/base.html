@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% block title %}{% endblock %}
+		<meta charset="UTF-8">
+	<meta name="description" content="Киномонстер - это портал о кино ">
+	<meta name="keywords" content="фильмы, фильмы онлайн, hd" />
+</head>
+<body>
+	{% if request.path != '/' %}
+	<h3><a href='/'>На главную</a></h3>
+	{% endif %}
+	{% block content %}{% endblock %}
+	<a href = "#" onclick="javascript:history.back(); return false;">Назад</a>
+</body>
+</html>

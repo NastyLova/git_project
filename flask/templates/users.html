@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Mysite: users</title>
+{% endblock %}
+
+{% block content %}
+	<br><a href="/user">Создать нового пользователя</a>
+	{% if error %}
+		<h3>Пользователь с именем "{{ user }}" уже существует!</h3>
+	{% endif %}
+	{% if users %}
+		<ul>
+			{% for index_user,user in users %}
+			<li><a href="/user/{{ index_user }}">{{ user.login }}</a></li>
+			{% endfor %}
+		</ul>
+	{% else %}
+		<p>Пользователи отсутствуют</p>
+	{% endif %}
+{% endblock %}
