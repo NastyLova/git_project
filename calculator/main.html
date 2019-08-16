@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <div id="app">
+            <label for="">Введите сумму займа: </label><br>
+            <input v-model="costall" type="number" placeholder="0"><br>
+            <label for="">Введите процентную ставку: </label><br>
+            <input v-model="percent" type="number" placeholder="0"><br>
+            <label for="">Введите срок займа: </label><br>
+            <input v-model="terms" type="number" placeholder="0"><br>
+            <label for="">Или выберете дату планируемого погашения: </label><br>
+            <input v-model="date" type="date" placeholder="0"><br>
+            <input type="button" @click="calculate" value="Рассчитать">
+            <h4>Сумма задолженности по процентам: {{ summ }}</h4>
+            <h4>Сумма процента в день: {{ dailypercent }}</h4>
+            <h4>Дата оплаты: {{ expiration_date }}</h4>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="main.js"></script>
+        <script src="moment.min.js"></script>
+    </body>
+    
+</html>
