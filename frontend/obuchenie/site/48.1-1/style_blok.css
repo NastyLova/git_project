@@ -1,0 +1,40 @@
+/* CSS Document */
+#wrepper{
+    outline: 1px solid #FF0000;
+    margin: 0 auto;
+    padding:10px;
+    width: 900px;    
+}
+#header{
+    background-color: #0000FF;
+    margin-bottom: 15px;
+	height:80px;
+}
+#menu1{
+    background-color: #FF0000;
+    margin-bottom: 15px;
+	float: left;
+	width: 150px;
+	
+}
+#menu2{
+    background-color: #FFFF00;
+    margin-bottom: 15px;
+	width: 150px;
+	float: right;
+	
+}
+#text{
+    background-color: #00FFFF;
+    margin-bottom: 15px;
+	width: 580px;
+	margin-left: 160px;
+}
+#footer{
+    background-color: #00FF00;
+    margin-bottom: 15px;
+	height: 80px;
+}
+.clear{
+	clear: both;
+}

@@ -1,0 +1,9 @@
+﻿1. unslider.com/ - слайдер
+
+2. google.ru/maps/ -карта
+
+3. google.com/fonts/ - шрифты
+
+Сервисы, которыми используются для просмотра в разных разрешениях.
+http://quirktools.com/
+http://mattkersley.com/responsive/

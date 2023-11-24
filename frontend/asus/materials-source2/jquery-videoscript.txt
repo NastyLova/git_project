@@ -1,0 +1,2 @@
+﻿var videoA = function () {this.innerHTML = '<video width="100%" src="images/ASUS-ZenBook-3-product-video854.mp4"  controls autoplay>'}; 
+document.querySelector('.video-center').addEventListener('click', function (e) { this.removeEventListener('click', videoA, false); videoA.apply(this, arguments); } , false);

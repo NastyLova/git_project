@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jquery смена картинки в зависимости от разрешения экрана</title>
+    <link rel="stylesheet" type="text/css" href="screen-resolution.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+  <div id="cover">
+    <img 
+      class="data-img"
+      src="img/350x200.jpg"
+      data-sml="img/350x200.jpg"
+      data-lit="img/500x286.jpg"
+      data-med="img/700x400.jpg"
+      data-lrg="img/1050x600.jpg"
+    >
+  </div>
+<script src="js/jquery-2.2.2.min.js"></script>
+  <script src="js/resolution-img.js"></script> 
+
+  <script>
+  $(function(){
+    $('.data-img').dataImg({
+      sml: 350,
+      lit: 500,
+      med: 700,
+      lrg: 1500,
+      resize: true,
+      bgImg: true
+    });
+  });
+  </script>
+
+   </body>
+</html>

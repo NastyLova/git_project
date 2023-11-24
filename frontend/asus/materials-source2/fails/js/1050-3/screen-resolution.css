@@ -1,0 +1,11 @@
+.data-img {
+  width: 100%;
+  max-width: 1050px;
+}
+
+#cover {
+  width: 100%;
+  max-width: 1050px;
+  padding-bottom: 80px;
+  margin: auto;
+}

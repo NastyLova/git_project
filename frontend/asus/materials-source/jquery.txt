@@ -1,0 +1,34 @@
+﻿<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/slider.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			$('.my-slider').unslider({
+			nav:true,
+			autoplay:true,
+			arrows:false,
+			delay:3000,
+			speed:750,
+			animation:'vertical',/*'horizontal' 'vertical' */
+			});
+		});
+	</script>
+
+
+
+
+
+
+
+<!-----      Выравнивание колонок         ----->	
+	<script>
+	function setEqualHeight(columns) { 
+		var heightcolumn = 0; 
+		columns.each( function() { 
+			currentHeight = $(this).height(); 
+			if(currentHeight > heightcolumn) { heightcolumn = currentHeight; } } ); 
+			columns.height(heightcolumn); 
+		} 
+		
+		$(document).ready(function() { setEqualHeight($(".level-0")); });
+</script>
+<!-----      /Выравнивание колонок         ----->

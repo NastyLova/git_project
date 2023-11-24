@@ -1,0 +1,570 @@
+/* ----- сброс ----- 24navo.com*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                    /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* ----- /сброс ----- */
+
+/* ----- базовые настройки ----- 24navo.com*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #828282;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color:#d2a739 ;
+	text-decoration: underline;
+}
+a:hover {
+	color: #00a8ff;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #00a8ff;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* ----- /базовые настройки ----- */
+
+
+/*
+#333333 - темный (заглавия)
+#828282 - средний (основной текст, активные ссылки у рамок и серого текста, иконки)
+#d3d3d2 - светлый (рамка)
+#00a8ff - синий (ссылки)
+*/
+.header-0{
+	background: rgb(7,7,7,0.3);
+	position: fixed;
+	z-index: 200;
+	width: 100%;
+}
+.main-top{
+max-width:1166px; margin:0 auto; /*top+bottom right+left*/
+}
+.header-t{
+padding:25px 0 20px 15px; /*top-right-bottom-left*/
+}
+.asus{
+float:left;
+}
+.header-b{
+padding:11px 0;
+}
+.menu{
+float:right;
+}
+.menu li{
+float:left; margin-right:28px; font-size:0.875em; text-transform:uppercase;
+}
+.menu li a{
+text-decoration:none; color:#fff; font-weight:700;
+}
+.menu li a:hover{
+color:#00a8ff;
+border-bottom: 1px solid #fff;
+padding-bottom: 3px;
+}
+.activ{
+color:#fff; font-weight:700;
+border-bottom: 1px solid #fff;
+padding-bottom: 3px;
+}
+
+/*slider*/
+
+.unslider-nav{
+max-width:1166px; 
+margin:-19px auto 0 auto; 
+position:relative; 
+top:-20px;
+}
+.my-slider ul li{
+position:relative; 
+border-bottom: 2px solid green;
+font-style: 28px;/*относительное*/
+}
+.my-slider ul li h1{
+color:#d2a739; 
+font-size:3.125em; 
+margin-bottom: 20px;
+font-style: 50px;
+}
+.my-slider ul li p{
+color:#00a8ff; 
+font-size:1.875em; 
+left:100px; 
+top:250px;
+}
+.my-slider ul li p span{ 
+font-size:18px;
+margin-top: 15px; 
+display: block;
+}
+.my-slider ul li img{ 
+width: 100%;
+}
+.slide-cover{
+	position: absolute;
+	max-width: 1000px;
+	left: 15%;
+	top: 30%;
+}
+.download-top{
+	color: #828282;
+	border: 2px solid #828282;
+	padding: 18px 45px;
+	border-radius: 5px;
+	font-weight: 700;
+	font-style: 18px;
+	text-decoration: none;
+}
+a:hover.download-top{
+	border: 2px solid #00a8ff;
+
+}
+/*slider*/
+.main-middle3-all{
+	background: #f1f1f1;
+	border-bottom:2px solid #828282;
+	padding: 50px 0 40px 0;
+}
+.main-middle3-all h3,.main-middle4-section h3{
+	color:#d2a739;
+	font-size: 1.25em;
+	text-align: center;
+}
+.main-middle3-all hr,.main-middle4-section hr{
+	width: 50%;
+	height: 2px;
+	margin: 15px auto;
+	border: 0;
+	background: linear-gradient(to right,rgba(210,167,57,0)0%,rgba(210,167,57,0.7)50%,rgba(210,167,57,0)100%);
+}
+.main-middle3-all h2,.main-middle4-section h2{
+	color:#828282;
+	font-size: 2.1875em;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.main-middle3 article a img{ 
+margin:0 auto 18px auto; 
+display:block;
+}
+.main-middle3 article a:hover img{
+	opacity: 0.8;
+}
+.main-middle3 article a{
+	font-size: 1.125em;
+	text-transform: uppercase;
+}
+.main-middle3 article a:hover{
+	color:#00a8ff; 
+	text-decoration:none;
+}
+.main-middle3 article p, .middle4-material p{
+	text-align: center;
+	font-size: 0.75em;
+	line-height: 1.6;
+}
+.gold-text{
+	color:#d2a739;
+	font-size: 1.425em;
+}
+.main-middle3 article{
+width:32.07%; float:left; margin-right:1.895%; /* 374/1166=32.07  32.07*3=96,21=3,79/2=1,895 */
+}
+.main-middle3 article:last-child{
+margin-right:0; 
+}
+.main-middle3 article h2, .middle4-material h2 a{
+font-size:1.125em; margin-bottom:10px;  /* 22.5px/16=1,40625 */
+}
+.main-middle3{
+margin:10px auto 45px auto;
+}
+/*      СМАРТФОНЫ - ТОВАРЫ          */
+.main-middle4-section{
+margin:50px auto; /*background:gold;*/
+}
+.main-middle4-section>h2{
+/*font-size:1.40625em; text-align:center; color:#333; margin-bottom:28px;*/
+}
+.middle4-article{
+/* background:pink;*/
+}
+
+.middle4-article article{
+	 width:22.9%; 
+	 margin-right:2.45%; 
+	 float:left;  /*background:yellow; */
+/* 268/1166=22,98456260720412  22,98456260720412*4=91,93825042881648-100=-8,06174957118352/3=2,687249857061173    */
+}
+.middle4-article article:last-child{
+margin-right:0; 
+}
+.middle4-article article img{
+	margin:0 auto; 
+	display:block; 
+	border: 2px solid #828282;
+	border-radius: 7px;
+}
+.middle4-material{
+padding:18px;
+}
+.middle4-material h2{
+font-size:1.125em; color:#333; text-transform:uppercase; margin-bottom:4px;    /* 18/16=1.125 */
+}
+.middle4-material h3{
+font-size:0.875em;text-transform:uppercase; margin-bottom:8px;    /* 14/16=0.875 */
+}
+.middle4-material p{
+font-size:0.625em; margin-bottom:12px;    /* 10/16=0,625 */
+}
+p.cost-order{
+border-top:1px solid #d3d3d2; font-size:0.875em; color:#333; padding:14px 0 0 0; margin-top:14px;
+}
+.cost{
+float:left;
+}
+.order{
+float:right
+}
+/*      /СМАРТФОНЫ - ТОВАРЫ         */
+/*         VIDEO           */
+.video-asus{
+	background: url(images/video-bg.jpg) center top no-repeat;
+	padding: 40px 0 16px 0;
+	background-size: cover;
+}
+.video-center{
+	text-align:center;
+	color: #fff;
+	margin: 0 auto; 
+}
+.video-center img{
+	cursor: pointer;
+}
+.video-center h2{
+	font-size: 2.1875em;
+	margin:30px auto 40px auto;
+}
+.video-center p{
+	font-size: 1.125em;
+	padding:40px 0 40px 0;
+	line-height: 2;
+}
+/*         /VIDEO           */
+/*      О компании Asus         */
+.map0{
+ margin-bottom:50px;
+}
+.map0 article{
+float: left; width:55%;
+}
+.map1{
+float: right; width:40%;
+}
+.map0 article h1{
+font-size:1.40625em; color:#333; margin-bottom:25px;
+}
+.map0 article p{
+font-size:0.875em; color:#828282; margin-bottom:20px;
+}
+.map-ifr{
+position:relative; padding-bottom:58%; height:0; overflow:hidden;
+}
+.map-ifr iframe{
+position: absolute; width:100%; height:100%; top:0; left:0; 
+}
+/*      /О компании Asus         */
+/*     Нравится ли Вам ноутбук ?        */
+.drivers-100{
+	background:#828282; 
+	color:#fff; 
+	padding:28px 0;
+	text-align: center;
+}
+.drivers-100 h3{
+	font-size:3.375em; 
+	text-align: center;
+}
+a.order-naw{
+	color:#fff;
+	border:2px solid #fff;
+	padding: 18px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin: 25px auto 0 auto;
+	display:inline-block;
+}
+a:hover.order-naw{
+	color:#00a8ff;
+	border: 2px solid #00a8ff;
+}
+a:active.order-naw{
+	color:#00a8ff;
+	border: 2px solid #00a8ff;
+}
+a:visited.order-naw{
+	color:#fff;
+	border: 2px solid #fff;
+}
+/*      /Нравится ли Вам ноутбук ?        */
+/*MAPS AND FORM*/
+.contact-asus{
+	position: relative;
+	height: 570px;
+}
+.contact-form{
+	position: absolute;
+	bottom: 90px;
+	width: 300px;
+	left: 50%;
+	background-color:rgb(0%, 50%, 0%, 0.6);
+	margin-left: -150px;
+	border-radius: 4px;
+	padding: 28px 28px 24px 28px;
+	box-sizing: border-box;
+}
+.contact-form h2{
+	color:#fff;
+	text-align: center;
+	margin-bottom: 18px;
+	font-size: 2.187em;
+}
+.foot-email{
+	width:100%; 
+	padding:6px 15px; 
+	margin-bottom:14px; 
+	font-size:0.812em; 
+	box-sizing:border-box; 
+	border:none;
+	border-radius: 4px;
+	color: #828282;
+	text-align: center;
+}
+.foot-textarea{
+	width:100%;  
+	padding:6px 15px; 
+	margin-bottom:14px; 
+	font-size:0.812em; 
+	box-sizing:border-box;
+	border:none;
+	border-radius: 4px;
+	color: #828282;
+	text-align: center;
+	height: 130px;
+	font-family:Verdana,Arial,Helvetica;
+}
+.foot-submit{
+	color:#fff;
+	padding:6px 15px; 
+	margin-bottom:14px; 
+	font-size:0.812em;
+	border:none; 
+	background:#333; 
+	cursor:pointer;
+	border-radius: 4px;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+/*/MAPS AND FORM*/
+/*      Футер          */
+.foot{
+background:#333; padding:38px 0;
+}
+.foot .middle4-article article{
+border:none;
+}
+.foot h2{
+color:#FFF;font-size:1.40625em; margin-bottom:9px; text-transform:uppercase;  
+}
+.foot p a{
+color:#d3d3d2; display:block; text-decoration:none;font-size:0.875em;
+}
+.foot p a:hover{
+color:#00a8ff; text-decoration:underline;
+}
+.foot h3{
+color:#d3d3d2; margin-top:15px;
+}
+
+
+/*      /Футер          */
+@media screen and (max-width:970px){
+.drivers-100 h3{
+float:none; text-align:center;
+}
+.drivers-form{
+float:none; margin:16px auto 0  auto; display:table;
+}
+}
+@media screen and (max-width:780px){
+.middle4-article article{
+width:45%;margin:0 1.5% 25px 1.5%; /*background:yellow; */
+/* 268/1166=22,98456260720412  22,98456260720412*4=91,93825042881648-100=-8,06174957118352/3=2,687249857061173    */
+}
+.middle4-article article:last-child{
+margin:0 1.5% 25px 1.5%;
+}
+@media screen and (max-width:685px){
+.search-top{
+float: right; border-bottom:1px solid #d3d3d2;border-top:1px solid #d3d3d2; padding:6px 0;
+}
+.my-slider ul li h1{
+font-size:2em;top:80px;
+}
+.my-slider ul li p{
+font-size:1.3em; top:120px;
+}
+.map0 article{
+float: none; width:95%; margin:0 2.5% 25px 2.5%;
+}
+.map1{
+float: none; width:95%; margin:0 2.5% 25px 2.5%;
+}
+}
+@media screen and (max-width:600px){
+.main-middle3 article{
+width:95%; float: none; margin:0 2.5% 25px 2.5%; /* 374/1166=32.07  32.07*3=96,21=3,79/2=1,895 */
+}
+.main-middle3 article:last-child{
+margin:0 2.5% 25px 2.5%;
+}
+.main-middle3 article h2{
+text-align:center;
+  /* 22.5px/16=1,40625 */
+}
+.main-middle3 article p{
+text-align:center;
+}
+.main-middle3 article img{
+width:95%;
+}
+}
+@media screen and (max-width:405px){
+.header-t{
+padding:5px 0 20px 0;
+}
+.asus{
+float: none; margin:0 auto 1% auto; display:table; 
+}
+.tel-basket{
+float: none; margin:0 auto 1% auto; display:table; 
+}
+}
+@media screen and (max-width:390px){
+.my-slider ul li h1{
+font-size:1.8em;top:30px;
+}
+.my-slider ul li p{
+font-size:1.3em; top:70px; color:#0080FF;
+}
+.middle4-article article{
+width:95%; float: none; margin:0 2% 25px 2%; /*background:yellow; */
+/* 268/1166=22,98456260720412  22,98456260720412*4=91,93825042881648-100=-8,06174957118352/3=2,687249857061173    */
+}
+.middle4-article article:last-child{
+width:95%; float: none; margin:0 2% 25px 2%;
+}
+}
+@media screen and (max-width:315px){
+.basket{
+padding:4px 10px; margin-left:10px;
+}
+.my-slider ul li h1{
+font-size:1.5em;top:20px; left:20%;
+}
+.my-slider ul li p{
+font-size:1em; top:50px; left:20%; font-weight:bold;
+}
+.drivers-100{
+padding:15px 0;
+}
+.drivers-form{
+float: none; margin:16px  auto 0  auto; display:table;
+}
+.drivers-models{
+float: none; width:95%; margin:0 2.5% 10px 2.5%;
+}
+.drivers-submit{
+margin-left:2.5%;
+}
+}
+
+
+
+
+
+
+
+

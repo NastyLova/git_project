@@ -1,0 +1,540 @@
+/* ----- сброс ----- 24navo.com*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* ----- /сброс ----- */
+
+/* ----- базовые настройки ----- 24navo.com*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #828282;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #00a8ff;
+	text-decoration: underline;
+}
+a:hover {
+	color: #00a8ff;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #00a8ff;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.main-top{
+	max-width: 1166px;
+	margin: 0 auto;	
+}
+.header-t{
+	border-bottom: 1px solid #d3d3d3;
+	padding: 25px 0 20px 0;
+}
+.asus{
+	float:left;
+}
+
+.tel-basket{
+	float:right;
+}
+.tel-basket p{
+	float:left;
+	font-size: 0.75em;
+	font-weight: 700;
+}
+.tel-basket p img{
+	margin: 4px;
+	vertical-align: middle;
+}
+.basket{
+	border: 1px solid #d3d3d3;
+	padding: 6px 24px;
+	margin-left: 19px;
+}
+.tel{
+	margin-top: 7px;
+}
+.basket a{
+	text-decoration: none;
+	color: #828282;
+	margin-left: 19px;
+}
+.basket a:hover{
+	color:#00a8ff;
+}
+.header-b{
+	padding:11px 0;
+}
+.menu{
+	float:left;
+}
+.menu li{
+	float:left;
+	margin-right:28px;
+	font-size:0.875em;
+	text-transform:uppercase;
+}
+.menu li a{
+	text-decoration:none;
+	color:#828282;
+	font-weight:700;
+}
+.menu li a:hover{
+	color:#00a8ff;
+}
+.activ{
+	color:#333333;
+	font-weight:700;
+}
+.search-top{
+	float:left;
+	margin-top:-2px;
+}
+.search-img{
+	float:left;
+	margin: 4px 4px 0;
+}
+.search{
+	float:left;
+	border:none;
+	font-size:0.875em;
+}
+.unslider-nav{
+	max-width:1166px;
+	margin: 0 auto;
+	position:relative;
+	top:-30px;
+}
+.my-slider ul li{
+	position:relative;
+}
+.my-slider ul li h1{
+	position:absolute;
+	color:#d2a739;
+	font-size:3.125em;
+	left:100px;
+	top:180px;
+}
+.my-slider ul li p{
+	position:absolute;
+	color:#647996;
+	font-size:1.875em;
+	left:100px;
+	top:250px;
+}
+.main-middle3 article a img{
+	border:2px solid #d3d3d2;
+	margin: 0 auto 18px auto;
+	display: block;
+}
+.main-middle3 article a:hover img{
+	border:2px solid #333;
+}
+.main-middle3 article a:hover{
+	color:#828282;
+	text-decoration:none;
+}
+.main-middle3 article{
+	width:32.07%;
+	float:left;
+	margin-right:1.895%;
+}
+.main-middle3 article:last-child{
+	margin-right:0;
+}
+.main-middle3 article h2{
+	font-size:1.40625em;
+	margin-bottom:10px;
+}
+.main-middle3{
+	margin:10px auto 45px auto;
+}
+.main-middle4-section{
+	margin-bottom:50px;
+}
+.main-middle4-section>h2{
+	font-size:1.40625em;
+	color:#333;
+	text-align:center;
+	margin-bottom:28px;
+}
+.middle4-article article{
+	border:2px solid #d3d3d2;
+	width:22.8%;
+	margin-right:2.45%;
+	float:left;
+}
+.middle4-article article:last-child{
+	margin-right:0;
+}
+.middle4-article article img{
+	margin:0 auto;
+	display:block;
+}
+.middle4-material{
+	padding:18px;
+}
+.middle4-material h2{
+	font-size:1.125em;
+	color:#333;
+	text-transform:uppercase;
+	margin-bottom:4px;
+}
+.middle4-material h3{
+	font-size:0.875em;
+	text-transform:uppercase;
+	margin-bottom:8px;
+}
+.middle4-material p{
+	font-size:0.625em;
+	margin-bottom:12px;
+}
+p.cost-order{
+	border-top:1px solid #d3d3d2;
+	font-size:0.875em;
+	color:#333;
+	padding:14px 0 0 0;
+	margin-top:14px;
+}
+.cost{
+	float:left;
+}
+.order{
+	float:right;
+}
+.map0{
+	margin-bottom:50px;
+}
+.map0 article{
+	float:left;
+	width:55%;
+}
+.map1{
+	float:right;
+	width:40%;
+}
+.map0 article h1{
+	font-size:1.40625em;
+	color:#333;
+	margin-bottom:25px;
+}
+.map0 article p{
+	font-size:0.875em;
+	color:#828282;
+	margin-bottom:20px;
+}
+.map-ifr{
+	position:relative;
+	padding-bottom:58%;
+	height:0;
+	overflow:hidden;
+}
+.map-ifr iframe{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+}
+.drivers-100{
+	background:#d3d3d2;
+	color:#333;
+	padding:28px 0;
+}
+.drivers-100 h3{
+	float:left;
+	font-size:1.40625em;
+	text-transform:uppercase;
+}
+.drivers-form{
+	float:right;
+	margin:16px 0 0 0;
+}
+.drivers-models{
+	float:left;
+	font-size:0.875em;
+	width:210px;
+	padding:6px 15px;
+	border:none;
+}
+.drivers-submit{
+	background:#333;
+	margin-left:19px;
+	float:left;
+	border:none;
+	color:white;
+	padding:6px 15px;
+	font-size:0.875em;
+	cursor:pointer;
+}
+.foot{
+	background:#333;
+	padding:38px 0;
+}
+.foot .middle4-article article{
+	border:none;
+}
+.foot h2{
+	font-size:1.40625em;
+	color:white;
+	margin-bottom:9px;
+	text-transform:uppercase;
+}
+.foot p a{
+	color:#d3d3d2;
+	display:block;
+	text-decoration:none;
+	font-size:0.875em;
+}
+.foot p a:hover{
+	color:#00a8ff;
+	text-decoration:underline;
+}
+.foot h3{
+	color:#d3d3d2;
+	margin-top:15px;
+}
+.foot-email{
+	width:100%;
+	text-transform:uppercase;
+	padding:6px 15px;
+	margin-bottom:14px;
+	font-size:0.75em;
+	box-sizing:border-box;
+	border:none;
+}
+.foot-textarea{
+	width:100%;
+	text-transform:uppercase;
+	padding:6px 15px;
+	margin-bottom:14px;
+	font-size:0.75em;
+	box-sizing:border-box;
+	border:none;
+}
+.foot-submit{
+	text-transform:uppercase;
+	padding:6px 15px;
+	margin-bottom:14px;
+	font-size:0.75em;
+	border:none;
+	color:#333;
+	background:#d3d3d2;
+	cursor:pointer;
+}
+@media screen and (max-width:970px){
+.drivers-100 h3{
+	float:none;
+	text-align:center;
+}
+.drivers-form{
+	float:none;
+	margin:16px auto 0 auto;
+	display:table;
+}
+}
+@media screen and (max-width:780px){
+.middle4-article article{
+	border:2px solid #d3d3d2;
+	width:45%;
+	margin:0 2% 25px 2%;
+	float:left;
+}
+.middle4-article article:last-child{
+	margin:0 1.5% 25px 1.5%;
+}
+}
+@media screen and (max-width:685px){
+.search-top{
+	float:right;
+	border-bottom:1px solid #d3d3d2;
+	border-top:1px solid #d3d3d2;
+	padding:6px 0;
+}
+.my-slider ul li h1{
+	position:absolute;
+	color:#d2a739;
+	font-size:2em;
+	left:100px;
+	top:80px;
+}
+.my-slider ul li p{
+	font-size:1.3em;
+	top:120px;
+}
+.map0 article{
+	float:none;
+	width:95%;
+	margin:0 2.5% 25px 2.5%;
+}
+.map1{
+	float:none;
+	width:95%;
+	margin:0 2.5% 25px 2.5%;
+}
+}
+@media screen and (max-width:600px){
+.main-middle3 article{
+	width:95%;
+	float:none;
+	margin:0 2.5% 25px 2.5%;
+}
+.main-middle3 article:last-child{
+	margin:0 2.5% 25px 2.5%;
+}
+.main-middle3 article h2{
+	text-align:center;
+}
+.main-middle3 article p{
+	text-align:center;
+}
+.main-middle3 article img{
+	width:95%;
+}
+}
+@media screen and (max-width:405px){
+.header-t{
+	padding: 5px 0 20px 0;
+}
+.asus{
+	float:none;
+	display:table;
+	margin:0 auto 1%;
+}
+
+.tel-basket{
+	float:none;
+	display:table;
+	margin:0 auto 1%;
+}
+}
+@media screen and (max-width:390px){
+.my-slider ul li h1{
+	font-size:1.8em;
+	top:30px;
+}
+.my-slider ul li p{
+	font-size:1.3em;
+	top:70px;
+	color:#00a8ff;
+}
+.middle4-article article{
+	width:95%;
+	float:none;
+	margin:0 2% 25px 2%;
+}
+.middle4-article article:last-child{
+	width:95%;
+	float:none;
+	margin:0 2% 25px 2%;
+}
+}
+@media screen and (max-width:315px){
+.basket{
+	padding: 4px 10px;
+	margin-left: 10px;
+}
+.my-slider ul li h1{
+	font-size:1.5em;
+	top:20px;
+	left:20%;
+}
+.my-slider ul li p{
+	font-size:1em;
+	top:50px;
+	left:20%;
+	font-weight:bold;
+}
+.drivers-100{
+	padding:15px 0;
+}
+.drivers-form{
+	float:none;
+	margin:16px o auto 0;
+	display:table;
+}
+.drivers-models{
+	float:none;
+	width:95%;
+	margin:0 2.5% 10px 2.5%;
+}
+.drivers-submit{
+	margin-left:2.5%;
+	float:none;
+}
+}
+/* ----- /базовые настройки 
+#333333 - темный (заглавия)
+#828282 - средний (основной текст, активные ссылки у рамок и серого текста, иконки)
+#d3d3d2 - светлый (рамка)
+#00a8ff - синий (ссылки)
+----- */

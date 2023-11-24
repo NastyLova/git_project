@@ -1,0 +1,20 @@
+﻿<!-----      СЛАЙДЕР         ----->
+<div class="my-slider ">
+	<ul>
+		<li>
+			<div class="slide1">
+				<div class="slider-cover">
+					<h1>ASUS ZenBook 3</h1>
+					<p>Престижный ноутбук с  беспрецедентной производительностью<br>
+			
+					<span>Сказать, что ZenBook 3 — это новое поколение ZenBook, значит ничего не сказать: <br>этот ZenBook знаменует собой новую эру мобильных вычислений.</span> <br>
+					<a href="#" class="download-top">СКАЧАТЬ</a></p>
+					</div>
+					<img src="images/slide1.jpg" alt="">
+			</div>
+		</li>
+		<li><img src="images/slide2.jpg" alt=""></li>
+		<li><img src="images/slide3.jpg" alt=""></li>
+	</ul>
+</div>
+<!-----      /СЛАЙДЕР         ----->

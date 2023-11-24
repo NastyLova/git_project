@@ -1,0 +1,5 @@
+﻿<!--<link rel="shortcut icon" href="http://www.asus.com/images/favicon.ico" type="image/x-icon" />--><link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	

@@ -1,0 +1,5 @@
+﻿$('#at').hover(function(){
+	$(this).attr('src','images/video-play-bl.png');},  
+	function(){
+	$(this).attr('src','images/video-play.png');
+	});

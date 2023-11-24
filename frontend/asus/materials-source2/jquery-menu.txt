@@ -1,0 +1,15 @@
+﻿$(document).scroll(function() {
+	if($(document).scrollTop()>400)
+	{
+		/*Шапка маленькая*/
+		$(".header-t").css('padding','1px 0 1px 15px');
+		$("#logo").attr('src','images/asus-logo-.png');
+		
+	}
+	if($(document).scrollTop()<=400)
+	{
+		/*Шапка большая*/
+		$(".header-t").css('padding','25px 0 20px 15px');
+		$("#logo").attr('src','images/asus-logo.png');
+	}
+})
